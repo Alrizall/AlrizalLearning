@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_nav"
+    app:startDestination="@id/fragmentHome3">
+    <fragment
+        android:id="@+id/fragmentHome3"
+        android:name="com.example.alrizallearning.feature.home.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome3_to_fragmentMateri2"
+            app:destination="@id/fragmentMateri2" />
+        <action
+            android:id="@+id/action_fragmentHome3_to_fragmentTugas2"
+            app:destination="@id/fragmentTugas2" />
+        <action
+            android:id="@+id/action_fragmentHome3_to_fragmentQuiz2"
+            app:destination="@id/fragmentQuiz2" />
+        <action
+            android:id="@+id/action_fragmentHome3_to_fragmentNilai2"
+            app:destination="@id/fragmentNilai2" />
+        <action
+            android:id="@+id/action_fragmentHome3_to_fragmentProfil2"
+            app:destination="@id/fragmentProfil2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLogin2"
+        android:name="com.example.admin.feature.login.FragmentLogin"
+        android:label="FragmentLogin" >
+        <action
+            android:id="@+id/action_fragmentLogin2_to_fragmentHome3"
+            app:destination="@id/fragmentHome3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMateri2"
+        android:name="com.example.alrizallearning.feature.FragmentMateri"
+        android:label="fragment_materi"
+        tools:layout="@layout/fragment_materi" >
+        <action
+            android:id="@+id/action_fragmentMateri2_to_fragmentDetailMateri"
+            app:destination="@id/fragmentDetailMateri" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentNilai2"
+        android:name="com.example.alrizallearning.feature.FragmentNilai"
+        android:label="fragment_nilai"
+        tools:layout="@layout/fragment_nilai" />
+    <fragment
+        android:id="@+id/fragmentProfil2"
+        android:name="com.example.alrizallearning.feature.FragmentProfil"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/action_fragmentProfil2_to_fragmentLogin2"
+            app:destination="@id/fragmentLogin2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentQuiz2"
+        android:name="com.example.alrizallearning.feature.FragmentQuiz"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/fragmentTugas2"
+        android:name="com.example.alrizallearning.feature.FragmentTugas"
+        android:label="fragment_tugas"
+        tools:layout="@layout/fragment_tugas" >
+        <action
+            android:id="@+id/action_fragmentTugas2_to_fragmentDetailTugas"
+            app:destination="@id/fragmentDetailTugas" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetailMateri"
+        android:name="com.example.alrizallearning.feature.FragmentDetailMateri"
+        android:label="FragmentDetailMateri" >
+        <argument
+            android:name="idMateri"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetailTugas"
+        android:name="com.example.alrizallearning.feature.FragmentDetailTugas"
+        android:label="FragmentDetailTugas" />
+</navigation>

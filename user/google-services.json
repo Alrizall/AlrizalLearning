@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "637790072325",
+    "project_id": "alrizallearning",
+    "storage_bucket": "alrizallearning.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637790072325:android:133c2e7f284aa28639766c",
+        "android_client_info": {
+          "package_name": "com.example.alrizallearrning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9VPsd9O-VrlPMh6bG-hgz-XlhVSB7k9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
