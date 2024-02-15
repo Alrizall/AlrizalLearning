@@ -16,7 +16,7 @@
         <View
             android:id="@+id/view"
             android:layout_width="match_parent"
-            android:layout_height="320dp"
+            android:layout_height="150dp"
             android:background="@color/blue"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -27,8 +27,8 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="Hi, User"
+            android:layout_margin="25dp"
+            android:text="Hi, Admin"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -39,72 +39,65 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lets Start Learning"
+            android:text="Selamat datang di menu admin"
             android:textStyle="italic"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/ib_profilhome"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="20dp"
-            android:src="@drawable/foto_default"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:shapeAppearanceOverlay="@style/roundCustomCorner" />
 
-        <TextView
-            android:id="@+id/tv_Pemberitahuan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:text="Pemberitahuan"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/rv_pemberitahuan"
-            app:layout_constraintStart_toStartOf="parent" />
+<!--        <TextView-->
+<!--            android:id="@+id/tv_Pemberitahuan"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:text="Pemberitahuan"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24sp"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/rv_pemberitahuan"-->
+<!--            app:layout_constraintStart_toStartOf="parent" />-->
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_pemberitahuan"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_margin="10dp"
-            android:orientation="horizontal"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toBottomOf="@+id/view"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:listitem="@layout/item_pemberitahuan" />
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rv_pemberitahuan"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/view"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            tools:listitem="@layout/item_pemberitahuan" />-->
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
-            android:text="Categories"
+            android:text="Menu"
             android:textColor="@color/black"
             android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="500dp"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_cat1"
-                android:layout_width="100dp"
+                android:layout_width="250dp"
                 android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="4dp"
@@ -138,12 +131,14 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_cat2"
-                android:layout_width="100dp"
+                android:layout_width="250dp"
                 android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="4dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginRight="5dp">
 
                 <LinearLayout
@@ -173,34 +168,36 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_cat3"
-                android:layout_width="100dp"
+                android:layout_width="250dp"
                 android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="4dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="15dp">
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:background="@color/purple">
+                    android:background="@color/aqua">
 
                     <ImageView
                         android:id="@+id/iv_cat3"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/online_learning" />
+                        android:src="@drawable/icon_data" />
 
                     <TextView
                         android:id="@+id/tv_cat3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Quiz"
-                        android:textColor="@color/black"
+                        android:text="Data SIswa"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:gravity="center"/>
 
                 </LinearLayout>
@@ -208,12 +205,14 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_cat4"
-                android:layout_width="100dp"
+                android:layout_width="250dp"
                 android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="4dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginRight="5dp">
 
                 <LinearLayout
@@ -242,33 +241,6 @@
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/tv_duedate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="10dp"
-            android:text="Duedate"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_populer"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="8dp"
-            android:nestedScrollingEnabled="false"
-            android:orientation="vertical"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_duedate"
-            tools:listitem="@layout/item_course" />
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

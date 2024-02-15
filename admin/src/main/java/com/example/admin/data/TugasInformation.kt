@@ -1,4 +1,4 @@
-package com.example.core;
+package com.example.admin.data;
 
 import androidx.annotation.DrawableRes
 

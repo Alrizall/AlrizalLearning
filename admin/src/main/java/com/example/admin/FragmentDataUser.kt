@@ -1,4 +1,4 @@
-package com.example.admin.feature.tugas
+package com.example.admin
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,20 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.admin.databinding.FragmentDataUserBinding
 import com.example.admin.databinding.FragmentTugasAdminBinding
 
+class FragmentDataUser : Fragment() {
 
-class FragmentTugasAdmin : Fragment() {
-
-
-    private var _binding: FragmentTugasAdminBinding? = null
+    private var _binding: FragmentDataUserBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentTugasAdminBinding.inflate(inflater, container, false)
+        _binding = FragmentDataUserBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -29,7 +28,8 @@ class FragmentTugasAdmin : Fragment() {
     }
 
     private fun initView() {
-        binding.ivTombolbackTugas.setOnClickListener {
+
+        binding.ivBackInputData.setOnClickListener {
             findNavController().popBackStack()
         }
     }

@@ -1,4 +1,4 @@
-package com.example.admin.feature.tugas
+package com.example.admin.feature.materi
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,20 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.admin.databinding.FragmentTugasAdminBinding
+import com.example.admin.R
+import com.example.admin.databinding.FragmentMateriBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
-class FragmentTugasAdmin : Fragment() {
-
-
-    private var _binding: FragmentTugasAdminBinding? = null
+@AndroidEntryPoint
+class FragmentMateri : Fragment() {
+    private var _binding: FragmentMateriBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentTugasAdminBinding.inflate(inflater, container, false)
+        _binding = FragmentMateriBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -29,13 +29,14 @@ class FragmentTugasAdmin : Fragment() {
     }
 
     private fun initView() {
-        binding.ivTombolbackTugas.setOnClickListener {
+        binding.ivTombolbackMateri.setOnClickListener {
             findNavController().popBackStack()
         }
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
-
 }
+

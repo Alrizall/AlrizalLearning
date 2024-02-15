@@ -26,6 +26,9 @@
         <action
             android:id="@+id/action_fragmentHomeAdmin_to_fragmentProfilAdmin"
             app:destination="@id/fragmentProfilAdmin" />
+        <action
+            android:id="@+id/action_fragmentHomeAdmin_to_fragmentDataUser"
+            app:destination="@id/fragmentDataUser" />
     </fragment>
     <fragment
         android:id="@+id/fragmentLoginAdmin"
@@ -38,13 +41,9 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentMateriAdmin"
-        android:name="com.example.admin.feature.materi.FragmentMateriAdmin"
+        android:name="com.example.admin.feature.materi.FragmentMateri"
         android:label="fragment_materi_admin"
-        tools:layout="@layout/fragment_materi_admin" >
-        <action
-            android:id="@+id/action_fragmentMateriAdmin_to_itemMateriAdmin"
-            app:destination="@id/itemMateriAdmin" />
-    </fragment>
+        tools:layout="@layout/fragment_materi_admin" />
     <fragment
         android:id="@+id/fragmentNilaiAdmin"
         android:name="com.example.admin.feature.nilai.FragmentNilaiAdmin"
@@ -73,24 +72,10 @@
         android:name="com.example.admin.feature.tugas.FragmentTugasAdmin"
         android:label="fragment_tugas_admin"
         tools:layout="@layout/fragment_tugas_admin" >
-        <action
-            android:id="@+id/action_fragmentTugasAdmin_to_itemTugasAdmin"
-            app:destination="@id/itemTugasAdmin" />
     </fragment>
     <fragment
-        android:id="@+id/itemTugasAdmin"
-        android:name="com.example.admin.feature.tugas.ItemTugasAdmin"
-        android:label="fragment_item_tugas_admin"
-        tools:layout="@layout/fragment_item_tugas_admin" >
-        <argument android:name="idTugas"
-            app:argType="integer" />
-    </fragment>
-    <fragment
-        android:id="@+id/itemMateriAdmin"
-        android:name="com.example.admin.feature.materi.ItemMateriAdmin"
-        android:label="ItemMateriAdmin" >
-        <argument
-            android:name="idMateri"
-            app:argType="integer" />
-    </fragment>
+        android:id="@+id/fragmentDataUser"
+        android:name="com.example.admin.FragmentDataUser"
+        android:label="fragment_data_user"
+        tools:layout="@layout/fragment_data_user" />
 </navigation>

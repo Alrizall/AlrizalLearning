@@ -16,8 +16,4 @@ class LoginViewModel @Inject constructor(
     fun saveUserName(username: String) {
         preferenceHelper.saveStringInSharedPreference(USERNAME_KEY, username)
     }
-
-    fun saveAdmin() {
-        preferenceHelper.saveStringInSharedPreference(ADMIN_KEY, "admin")
-    }
 }

@@ -1,4 +1,4 @@
-package com.example.core
+package com.example.admin.data
 
 import android.icu.text.CaseMap.Title
 
